@@ -13,6 +13,40 @@ dependencies:
 
   cupertino_icons: ^1.0.2
 
+  # State Management
+  flutter_riverpod: 2.3.6
+
+  # Networking
+  retrofit: 4.0.1
+  dio: 5.3.2
+  connectivity_plus: 4.0.1
+  internet_connection_checker: 1.0.0+1
+  network_info_plus: 4.0.2
+
+  # Navigation
+  go_router: 9.0.0
+
+  # Generators
+  freezed_annotation: 2.2.0
+  json_annotation: 4.8.1
+  injectable: 2.1.2
+  retrofit_generator: 5.0.0
+
+  # Flavors
+  flutter_flavorizr: 2.2.1
+
+  # App Icon
+  flutter_launcher_icons: 0.13.1
+
+  # Splash Screen
+  flutter_native_splash: 2.3.1
+
+  # Local Storage
+  flutter_secure_storage: 8.0.0
+
+  # Testing
+  mocktail: 1.0.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -20,3 +54,27 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+flavorizr:
+  flavors:
+    dev:
+      app:
+        name: "CACF_dev"
+      android:
+        applicationId: "com.cacf.dev"
+      ios:
+        bundleId: "com.cacf.dev"
+    stg:
+      app:
+        name: "CACF_stg"
+      android:
+        applicationId: "com.cacf.stg"
+      ios:
+        bundleId: "com.cacf.stg"
+    prd:
+      app:
+        name: "CACF"
+      android:
+        applicationId: "com.cacf"
+      ios:
+        bundleId: "com.cacf"
