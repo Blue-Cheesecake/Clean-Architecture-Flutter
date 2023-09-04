@@ -1,3 +1,5 @@
+import 'src/core/core.dart';
+
 enum Flavor {
   dev,
   stg,
@@ -9,17 +11,16 @@ class F {
 
   static String get name => appFlavor?.name ?? '';
 
-  static String get title {
+  static AppConfigFlavor get appConfigEnv {
     switch (appFlavor) {
       case Flavor.dev:
-        return 'CACF_dev';
+        return AppConfigFlavor.dev;
       case Flavor.stg:
-        return 'CACF_stg';
+        return AppConfigFlavor.stg;
       case Flavor.prd:
-        return 'CACF';
+        return AppConfigFlavor.prd;
       default:
-        return 'title';
+        return AppConfigFlavor.prd;
     }
   }
-
 }
