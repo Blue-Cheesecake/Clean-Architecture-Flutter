@@ -6,10 +6,10 @@ part 'authenticate_response_model.freezed.dart';
 part 'authenticate_response_model.g.dart';
 
 @freezed
-class AuthenticatResponseModel with _$AuthenticatResponseModel implements IAuthenticateResponseEntity {
-  factory AuthenticatResponseModel({
+class AuthenticateResponseModel with _$AuthenticateResponseModel implements IAuthenticateResponseEntity {
+  factory AuthenticateResponseModel({
     required final String token,
-  }) = _AuthenticatResponseModel;
+  }) = _AuthenticateResponseModel;
 
-  factory AuthenticatResponseModel.fromJson(Map<String, dynamic> json) => _$AuthenticatResponseModelFromJson(json);
+  factory AuthenticateResponseModel.fromJson(Map<String, dynamic> json) => _$AuthenticateResponseModelFromJson(json);
 }
