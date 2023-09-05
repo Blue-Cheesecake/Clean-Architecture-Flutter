@@ -1,0 +1,57 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "DEV",
+      "request": "launch",
+      "type": "dart",
+      "flutterMode": "debug",
+      "program": "lib/main_dev.dart",
+      "args": [
+        "--flavor",
+        "dev",
+        // This api url work only local development on Android
+        // "--dart-define=apiURL=http://10.0.2.2:8080",
+        "--dart-define=apiURL=http://localhost:8080",
+
+        "--target",
+        "lib/main_dev.dart"
+      ]
+    },
+    {
+      "name": "STG",
+      "request": "launch",
+      "type": "dart",
+      // Temporary
+      "flutterMode": "release",
+      "program": "lib/main_stg.dart",
+      "args": [
+        "--flavor",
+        "stg",
+        // AWS
+        // "--dart-define=apiURL=http://...:...",
+
+        "--target",
+        "lib/main_stg.dart"
+      ]
+    },
+    {
+      "name": "PRD",
+      "request": "launch",
+      "type": "dart",
+      // Temporary
+      "flutterMode": "release",
+      "program": "lib/main_prd.dart",
+      "args": [
+        "--flavor",
+        "prd",
+        // AWS
+        // "--dart-define=apiURL=http://...:...",
+        // Firebase API Key
+
+        "--target",
+        "lib/main_prd.dart"
+      ]
+    }
+  ]
+}
