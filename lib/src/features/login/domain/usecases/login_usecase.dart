@@ -3,7 +3,7 @@ import '../../data/data.dart';
 import '../domain.dart';
 
 class LoginUseCase extends BaseUseCase<AuthenticateRequestModel, IAuthenticateResponseEntity> {
-  LoginUseCase({required IAuthenticationRepository repository}) : _repository = repository;
+  LoginUseCase({required final IAuthenticationRepository repository}) : _repository = repository;
 
   final IAuthenticationRepository _repository;
 

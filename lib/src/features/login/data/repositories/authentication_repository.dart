@@ -2,7 +2,7 @@ import '../../domain/domain.dart';
 import '../data.dart';
 
 class AuthenticationRepository implements IAuthenticationRepository {
-  AuthenticationRepository({required IAuthenticationDataSource dataSource}) : _dataSource = dataSource;
+  AuthenticationRepository({required final IAuthenticationDataSource dataSource}) : _dataSource = dataSource;
 
   final IAuthenticationDataSource _dataSource;
 
