@@ -61,5 +61,5 @@ class DesignSystem {
   static const g34 = Color(0xffefeff0);
   static const g35 = Color(0xff3b3738);
 
-  static const cacfPrimary = Color(0xff001834);
+  static const cacfPrimary = Colors.blue;
 }

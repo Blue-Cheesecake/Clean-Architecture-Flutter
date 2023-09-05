@@ -14,12 +14,12 @@ class FormInputStateNotifier extends StateNotifier<FormInputState> {
     state = state.copyWith(isButtonEnabled: isValid);
   }
 
-  void updateUsername(String value) {
+  void updateUsername(String? value) {
     state = state.copyWith(username: value);
     _verifyForm();
   }
 
-  void updatePassword(String value) {
+  void updatePassword(String? value) {
     state = state.copyWith(password: value);
     _verifyForm();
   }

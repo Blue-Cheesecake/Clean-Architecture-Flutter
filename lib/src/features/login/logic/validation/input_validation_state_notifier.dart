@@ -12,17 +12,20 @@ class InputValidationStateNotifier extends StateNotifier<InputValidationState> {
 
   bool isFormValid() {
     bool isValid = true;
+    var tempState = InputValidationState();
     final String? username = _ref.read(formInputStateProvider.select((value) => value.username));
     final String? password = _ref.read(formInputStateProvider.select((value) => value.password));
 
     if (username == null || username.trim().isEmpty) {
-      state = state.copyWith(usenameErrorText: AuthenticationMessages.usernameErrorText);
+      tempState = tempState.copyWith(usenameErrorText: AuthenticationMessages.usernameErrorText);
       isValid = false;
     }
     if (password == null || password.trim().isEmpty) {
-      state = state.copyWith(passwordErrorText: AuthenticationMessages.passwordErrorText);
+      tempState = tempState.copyWith(passwordErrorText: AuthenticationMessages.passwordErrorText);
       isValid = false;
     }
+
+    state = tempState;
 
     return isValid;
   }
