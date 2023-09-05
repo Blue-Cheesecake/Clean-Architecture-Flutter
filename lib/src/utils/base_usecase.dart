@@ -4,8 +4,6 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
 import '../core/core.dart';
-import 'base_result.dart';
-import 'exceptions/exceptions.dart';
 import 'utils.dart';
 
 abstract class BaseUseCase<P, R> {
