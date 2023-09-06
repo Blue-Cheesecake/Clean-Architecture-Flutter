@@ -39,6 +39,10 @@ class _UsernameTextFieldWdState extends ConsumerState<UsernameTextFieldWd> {
       onSubmitted: (value) => ref.read(formInputStateProvider.notifier).updateUsername(value),
       errorText: ref.watch(inputValidationStateProvider.select((value) => value.usenameErrorText)),
       errorTextStyle: TextStyles.bodyText6Bold.copyWith(color: DesignSystem.g1),
+      outlineInputBorder: OutlineInputBorder(
+        borderSide: const BorderSide(color: DesignSystem.g1),
+        borderRadius: BorderRadius.circular(200),
+      ),
     );
   }
 }

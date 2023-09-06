@@ -40,6 +40,10 @@ class _PasswordTextFieldWDState extends ConsumerState<PasswordTextFieldWD> {
       onSubmitted: (value) => ref.read(formInputStateProvider.notifier).updatePassword(value),
       errorText: ref.watch(inputValidationStateProvider.select((value) => value.passwordErrorText)),
       errorTextStyle: TextStyles.bodyText6Bold.copyWith(color: DesignSystem.g1),
+      outlineInputBorder: OutlineInputBorder(
+        borderSide: const BorderSide(color: DesignSystem.g1),
+        borderRadius: BorderRadius.circular(200),
+      ),
     );
   }
 }

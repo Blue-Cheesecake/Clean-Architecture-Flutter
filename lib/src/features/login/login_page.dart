@@ -31,10 +31,10 @@ class LoginPage extends StatelessWidget {
               color: Colors.white.withOpacity(0.1),
             ),
           ),
-          Column(
+          const Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const CircleAvatar(
+              CircleAvatar(
                 minRadius: 50,
                 backgroundColor: DesignSystem.g1,
                 child: Icon(
@@ -42,30 +42,12 @@ class LoginPage extends StatelessWidget {
                   size: 70,
                 ),
               ),
-              const SizedBox(height: 20),
-              const SizedBox(width: 230, child: UsernameTextFieldWd()),
-              const SizedBox(height: 10),
-              const SizedBox(width: 230, child: PasswordTextFieldWD()),
-              const SizedBox(height: 25),
-              const SubmitButtonWD(),
-              Consumer(
-                builder: (context, ref, child) {
-                  final isLoading = ref.watch(authenticationStateProvider.select((value) => value.isLoading));
-                  log(isLoading.toString());
-
-                  if (isLoading) {
-                    return const Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        SizedBox(height: 15),
-                        CupertinoActivityIndicator(),
-                      ],
-                    );
-                  }
-
-                  return const SizedBox.shrink();
-                },
-              ),
+              SizedBox(height: 20),
+              SizedBox(width: 230, child: UsernameTextFieldWd()),
+              SizedBox(height: 10),
+              SizedBox(width: 230, child: PasswordTextFieldWD()),
+              SizedBox(height: 25),
+              SubmitButtonWD(),
             ],
           )
         ],
