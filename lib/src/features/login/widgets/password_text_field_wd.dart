@@ -39,6 +39,7 @@ class _PasswordTextFieldWDState extends ConsumerState<PasswordTextFieldWD> {
       onChanged: (value) => ref.read(formInputStateProvider.notifier).updatePassword(value),
       onSubmitted: (value) => ref.read(formInputStateProvider.notifier).updatePassword(value),
       errorText: ref.watch(inputValidationStateProvider.select((value) => value.passwordErrorText)),
+      errorTextStyle: TextStyles.bodyText6Bold.copyWith(color: DesignSystem.g1),
     );
   }
 }

@@ -2,7 +2,7 @@ class AuthenticationMessages {
   const AuthenticationMessages._();
 
   // Fields
-  static const title = 'Login';
+  static const signin = 'Sign In';
   static const usernamePlaceholder = 'Username';
   static const passwordPlaceholder = 'Password';
 

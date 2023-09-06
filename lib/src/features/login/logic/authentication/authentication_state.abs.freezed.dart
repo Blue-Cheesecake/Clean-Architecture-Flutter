@@ -107,8 +107,8 @@ class __$$_AuthenticationStateInitialCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_AuthenticationStateInitial implements _AuthenticationStateInitial {
-  _$_AuthenticationStateInitial();
+class _$_AuthenticationStateInitial extends _AuthenticationStateInitial {
+  _$_AuthenticationStateInitial() : super._();
 
   @override
   String toString() {
@@ -200,8 +200,9 @@ class _$_AuthenticationStateInitial implements _AuthenticationStateInitial {
   }
 }
 
-abstract class _AuthenticationStateInitial implements AuthenticationState {
+abstract class _AuthenticationStateInitial extends AuthenticationState {
   factory _AuthenticationStateInitial() = _$_AuthenticationStateInitial;
+  _AuthenticationStateInitial._() : super._();
 }
 
 /// @nodoc
@@ -225,8 +226,8 @@ class __$$_AuthenticationStateLoadingCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_AuthenticationStateLoading implements _AuthenticationStateLoading {
-  _$_AuthenticationStateLoading();
+class _$_AuthenticationStateLoading extends _AuthenticationStateLoading {
+  _$_AuthenticationStateLoading() : super._();
 
   @override
   String toString() {
@@ -318,8 +319,9 @@ class _$_AuthenticationStateLoading implements _AuthenticationStateLoading {
   }
 }
 
-abstract class _AuthenticationStateLoading implements AuthenticationState {
+abstract class _AuthenticationStateLoading extends AuthenticationState {
   factory _AuthenticationStateLoading() = _$_AuthenticationStateLoading;
+  _AuthenticationStateLoading._() : super._();
 }
 
 /// @nodoc
@@ -355,8 +357,8 @@ class __$$_AuthenticationStateDataCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_AuthenticationStateData implements _AuthenticationStateData {
-  _$_AuthenticationStateData({required this.data});
+class _$_AuthenticationStateData extends _AuthenticationStateData {
+  _$_AuthenticationStateData({required this.data}) : super._();
 
   @override
   final IAuthenticateResponseEntity data;
@@ -460,10 +462,11 @@ class _$_AuthenticationStateData implements _AuthenticationStateData {
   }
 }
 
-abstract class _AuthenticationStateData implements AuthenticationState {
+abstract class _AuthenticationStateData extends AuthenticationState {
   factory _AuthenticationStateData(
           {required final IAuthenticateResponseEntity data}) =
       _$_AuthenticationStateData;
+  _AuthenticationStateData._() : super._();
 
   IAuthenticateResponseEntity get data;
   @JsonKey(ignore: true)
@@ -490,8 +493,8 @@ class __$$_AuthenticationStateErrorCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_AuthenticationStateError implements _AuthenticationStateError {
-  _$_AuthenticationStateError();
+class _$_AuthenticationStateError extends _AuthenticationStateError {
+  _$_AuthenticationStateError() : super._();
 
   @override
   String toString() {
@@ -583,6 +586,7 @@ class _$_AuthenticationStateError implements _AuthenticationStateError {
   }
 }
 
-abstract class _AuthenticationStateError implements AuthenticationState {
+abstract class _AuthenticationStateError extends AuthenticationState {
   factory _AuthenticationStateError() = _$_AuthenticationStateError;
+  _AuthenticationStateError._() : super._();
 }

@@ -22,12 +22,17 @@ class AuthenticationStateNotifier extends CACFStateNotifier<AuthenticationState>
     final String username = _ref.read(formInputStateProvider.select((value) => value.username))!;
     final String password = _ref.read(formInputStateProvider.select((value) => value.password))!;
 
+    // TODO: delete delay.
+    //
+    await Future.delayed(const Duration(seconds: 2));
+    //
     final response = await _loginUseCase.execute(AuthenticateRequestModel(username: username, password: password));
 
     response.when(
       success: (data) {
         CACFUser.instance.writeToken(data.token);
         safeState = AuthenticationState.data(data: data);
+        CACFNavigation.instance.go(RoutePath.home);
       },
       error: (error) {
         safeState = AuthenticationState.error();
