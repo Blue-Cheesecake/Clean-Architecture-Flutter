@@ -26,7 +26,7 @@ abstract class BaseUseCase<P, R> {
       CACFLog.printDebug(message: '$e');
 
       if (e is DioException) {
-        final Response<dynamic>? response = e.response;
+        // final Response<dynamic>? response = e.response;
         // NOTE: you may change message of failure
         return Failure(ClientException(messages: CACFCommonMessages.unknownError));
       }
