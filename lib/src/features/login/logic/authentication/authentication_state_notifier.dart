@@ -19,8 +19,9 @@ class AuthenticationStateNotifier extends CACFStateNotifier<AuthenticationState>
 
   Future<void> login() async {
     safeState = AuthenticationState.loading();
-    final String username = _ref.read(formInputStateProvider.select((value) => value.username))!;
-    final String password = _ref.read(formInputStateProvider.select((value) => value.password))!;
+    final formInputState = _ref.read(formInputStateProvider);
+    final String username = formInputState.username!;
+    final String password = formInputState.password!;
 
     // TODO: delete delay.
     //
