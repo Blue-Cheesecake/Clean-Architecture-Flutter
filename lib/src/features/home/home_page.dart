@@ -17,8 +17,14 @@ class HomePage extends StatelessWidget {
           LogoutButtonWD(),
         ],
       ),
-      body: const Center(
-        child: RotatingContainerWD(),
+      body: const Column(
+        mainAxisSize: MainAxisSize.max,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Center(child: RotatingCircleWD()),
+          SizedBox(height: 50),
+          Center(child: RotatingContainerWD()),
+        ],
       ),
     );
   }
