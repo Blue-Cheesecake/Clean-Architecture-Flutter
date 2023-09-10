@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../config/config.dart';
+import 'utils/utils.dart';
 import 'widgets/widgets.dart';
 
 class HomePage extends StatelessWidget {
@@ -9,6 +11,8 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: Text(HomeMessages.title, style: TextStyles.header5.copyWith(color: DesignSystem.g1)),
+        centerTitle: true,
         actions: const [
           LogoutButtonWD(),
         ],
