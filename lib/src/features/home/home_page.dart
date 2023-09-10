@@ -9,10 +9,12 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        actions: const [LogoutButtonWD()],
+        actions: const [
+          LogoutButtonWD(),
+        ],
       ),
       body: const Center(
-        child: Text('Homepage'),
+        child: RotatingContainerWD(),
       ),
     );
   }
