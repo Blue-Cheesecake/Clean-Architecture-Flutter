@@ -40,13 +40,21 @@ The project is structured based on the principles of Clean Architecture, and eac
 ### Screenshots
 
 <div style="display: flex;">
-  <img title="ex1" alt="ex1" src="screenshot_ex_1.png">
-  <img title="ex2" alt="ex2" src="screenshot_ex_2.png">
+  <img title="ex1" alt="ex1" src="screenshot_ex_1.png" width=300>
+  <img title="ex2" alt="ex2" src="screenshot_ex_2.png" width=300>
+  
 </div>
+
 <div style="display: flex;">
-  <img title="ex3" alt="ex3" src="screenshot_ex_3.png">
-  <img title="ex4" alt="ex4" src="screenshot_ex_4.png">
+  <img title="ex3" alt="ex3" src="screenshot_ex_3.png" width=300>
+  <img title="ex4" alt="ex4" src="screenshot_ex_4.png" width=300>
 </div>
+
+  
+<img title="ex5" alt="ex5" src="screenshot_ex_5.png" width=500>
+
+
+
 
 ### Contribution
 
