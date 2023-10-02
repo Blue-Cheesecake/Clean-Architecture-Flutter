@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-import '../../../config/config.dart';
-import '../logic/logic.dart';
-import '../utils/utils.dart';
+import '../../../../config/config.dart';
+import '../../logic/logic.dart';
+import '../utils.dart';
 
 class SubmitButtonWD extends ConsumerWidget {
   const SubmitButtonWD({Key? key}) : super(key: key);
