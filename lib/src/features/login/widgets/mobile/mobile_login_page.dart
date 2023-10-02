@@ -9,24 +9,25 @@ class MobileLoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SkeletonPageWD(
-        child: Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        CircleAvatar(
-          minRadius: 50,
-          backgroundColor: DesignSystem.g1,
-          child: Icon(
-            Icons.person,
-            size: 70,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          CircleAvatar(
+            minRadius: 50,
+            backgroundColor: DesignSystem.g1,
+            child: Icon(
+              Icons.person,
+              size: 70,
+            ),
           ),
-        ),
-        SizedBox(height: 20),
-        SizedBox(width: 230, child: UsernameTextFieldWd()),
-        SizedBox(height: 10),
-        SizedBox(width: 230, child: PasswordTextFieldWD()),
-        SizedBox(height: 25),
-        SubmitButtonWD(),
-      ],
-    ));
+          SizedBox(height: 20),
+          SizedBox(width: 230, child: UsernameTextFieldWd()),
+          SizedBox(height: 10),
+          SizedBox(width: 230, child: PasswordTextFieldWD()),
+          SizedBox(height: 25),
+          SubmitButtonWD(),
+        ],
+      ),
+    );
   }
 }

@@ -1,1 +1,2 @@
-export 'mobile/mobile_login_page.dart';
+export 'mobile/mobile.dart';
+export 'tablet/tablet.dart';

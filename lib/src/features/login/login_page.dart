@@ -11,7 +11,6 @@ class LoginPage extends StatelessWidget {
     if (CACFScreen.instance.isMobile) {
       return const MobileLoginPage();
     }
-
-    return Container();
+    return const TabletLoginPage();
   }
 }
