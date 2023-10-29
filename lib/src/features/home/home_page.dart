@@ -21,9 +21,9 @@ class HomePage extends StatelessWidget {
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Center(child: RotatingCircleWD()),
+          // Center(child: RotatingCircleWD()),
           SizedBox(height: 50),
-          Center(child: RotatingContainerWD()),
+          // Center(child: RotatingContainerWD()),
         ],
       ),
     );
